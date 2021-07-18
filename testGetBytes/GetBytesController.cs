@@ -9,19 +9,11 @@ namespace testGetBytes
     [ApiController]
     public class GetBytesController : ControllerBase
     {
+       
         [HttpGet]
-        string GetText()
+        public byte[] Get()
         {
-
-
-            return "It is here!";
-        }
-        /*[HttpGet("/bytes")]
-        byte[] Get()
-        {
-
-
-            return read();
+     return read();
         }
 
         private byte[] read()
@@ -29,7 +21,7 @@ namespace testGetBytes
             var file = Path.Combine(Directory.GetCurrentDirectory(), "fly.png");
             byte[] bts = System.IO.File.ReadAllBytes(file);
             return bts;
-        }*/
+        }
       
 
         
